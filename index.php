@@ -121,10 +121,10 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
 													<i class="icon fa fa-dollar"></i>
 												</div>
 												<div class="col-xs-10">
-													<h4 class="info-box-heading green">money back</h4>
+													<h4 class="info-box-heading green">Hoàn tiền</h4>
 												</div>
 											</div>
-											<h6 class="text">30 Day Money Back Guarantee.</h6>
+											<h6 class="text">Nếu lỗi sán phảm, BẢO ĐẢM TIỀN LẠI TRONG 30 NGÀY.</h6>
 										</div>
 									</div><!-- .col -->
 
@@ -135,10 +135,10 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
 													<i class="icon fa fa-truck"></i>
 												</div>
 												<div class="col-xs-10">
-													<h4 class="info-box-heading orange">free shipping</h4>
+													<h4 class="info-box-heading orange">free ship</h4>
 												</div>
 											</div>
-											<h6 class="text">free ship-on oder over Rs. 600.00</h6>
+											<h6 class="text">MIỄN PHÍ SHIP-ON ODER TRÊN 600,00 ngàn</h6>
 										</div>
 									</div><!-- .col -->
 
@@ -149,10 +149,10 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
 													<i class="icon fa fa-gift"></i>
 												</div>
 												<div class="col-xs-10">
-													<h4 class="info-box-heading red">Special Sale</h4>
+													<h4 class="info-box-heading red">Ưu đãi</h4>
 												</div>
 											</div>
-											<h6 class="text">All items-sale up to 20% off </h6>
+											<h6 class="text">TẤT CẢ CÁC MẶT HÀNG-GIẢM GIÁ LÊN ĐẾN 20%</h6>
 										</div>
 									</div><!-- .col -->
 								</div><!-- /.row -->
@@ -167,11 +167,11 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
 				<!-- ============================================== SCROLL TABS ============================================== -->
 				<div id="product-tabs-slider" class="scroll-tabs inner-bottom-vs  wow fadeInUp">
 					<div class="more-info-tab clearfix">
-						<h3 class="new-product-title pull-left">Featured Products</h3>
+						<h3 class="new-product-title pull-left">SẢN PHẨM NỔI BẬT</h3>
 						<ul class="nav nav-tabs nav-tab-line pull-right" id="new-products-1">
 							<li class="active"><a href="#all" data-toggle="tab">All</a></li>
-							<li><a href="#books" data-toggle="tab">Books</a></li>
-							<li><a href="#furniture" data-toggle="tab">Furniture</a></li>
+							<li><a href="#books" data-toggle="tab">Sách</a></li>
+							<li><a href="#furniture" data-toggle="tab">Đồ gia dụng</a></li>
 						</ul><!-- /.nav-tabs -->
 					</div>
 
@@ -213,7 +213,7 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
 													<?php if ($row['productAvailability'] == 'In Stock') { ?>
 														<div class="action"><a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-primary">Add to Cart</a></div>
 													<?php } else { ?>
-														<div class="action" style="color:red">Out of Stock</div>
+														<div class="action" style="color:red">Hết hàng</div>
 													<?php } ?>
 												</div><!-- /.product -->
 
@@ -265,7 +265,7 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
 													<?php if ($row['productAvailability'] == 'In Stock') { ?>
 														<div class="action"><a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-primary">Add to Cart</a></div>
 													<?php } else { ?>
-														<div class="action" style="color:red">Out of Stock</div>
+														<div class="action" style="color:red">Hết hàng</div>
 													<?php } ?>
 												</div><!-- /.product -->
 
@@ -319,7 +319,7 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
 													<?php if ($row['productAvailability'] == 'In Stock') { ?>
 														<div class="action"><a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-primary">Add to Cart</a></div>
 													<?php } else { ?>
-														<div class="action" style="color:red">Out of Stock</div>
+														<div class="action" style="color:red">Hết hàng</div>
 													<?php } ?>
 												</div>
 
@@ -377,7 +377,7 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
 													<?php if ($row['productAvailability'] == 'In Stock') { ?>
 														<div class="action"><a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-primary">Add to Cart</a></div>
 													<?php } else { ?>
-														<div class="action" style="color:red">Out of Stock</div>
+														<div class="action" style="color:red">Hết hàng</div>
 													<?php } ?>
 												</div>
 											</div>
@@ -426,7 +426,7 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
 													<?php if ($row['productAvailability'] == 'In Stock') { ?>
 														<div class="action"><a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-primary">Add to Cart</a></div>
 													<?php } else { ?>
-														<div class="action" style="color:red">Out of Stock</div>
+														<div class="action" style="color:red">Hết hàng</div>
 													<?php } ?>
 												</div>
 											</div>
@@ -488,7 +488,7 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
 														<?php if ($row['productAvailability'] == 'In Stock') { ?>
 															<div class="action"><a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-primary">Add to Cart</a></div>
 														<?php } else { ?>
-															<div class="action" style="color:red">Out of Stock</div>
+															<div class="action" style="color:red">Hết hàng</div>
 														<?php } ?>
 													</div>
 												</div><!-- /.col -->
