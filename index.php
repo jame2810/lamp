@@ -135,7 +135,7 @@ if (isset($_GET['action']) && $_GET['action'] == "add") {
 													<i class="icon fa fa-truck"></i>
 												</div>
 												<div class="col-xs-10">
-													<h4 class="info-box-heading orange">Miễn phí vận chuyển</h4>
+													<h4 class="info-box-heading orange">free ship</h4>
 												</div>
 											</div>
 											<h6 class="text">MIỄN PHÍ ĐẶT HÀNG TRÊN 600,00 nghìn đồng.</h6>

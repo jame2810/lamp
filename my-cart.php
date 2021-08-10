@@ -267,7 +267,7 @@ if (isset($_POST['shipupdate'])) {
 							<thead>
 								<tr>
 									<th>
-										<span class="estimate-title">Địa chỉ mua sắm</span>
+										<span class="estimate-title">Địa chỉ nhà riêng</span>
 									</th>
 								</tr>
 							</thead>
@@ -281,22 +281,22 @@ if (isset($_POST['shipupdate'])) {
 											?>
 
 												<div class="form-group">
-													<label class="info-title" for="Billing Address">Địa chỉ thanh toán<span>*</span></label>
+													<label class="info-title" for="Billing Address">Địa chỉ<span>*</span></label>
 													<textarea class="form-control unicase-form-control text-input" name="billingaddress" required="required"><?php echo $row['billingAddress']; ?></textarea>
 												</div>
 
 
 
 												<div class="form-group">
-													<label class="info-title" for="Billing State ">Trạng thái thanh toán <span>*</span></label>
+													<label class="info-title" for="Billing State ">Huyện<span>*</span></label>
 													<input type="text" class="form-control unicase-form-control text-input" id="bilingstate" name="bilingstate" value="<?php echo $row['billingState']; ?>" required>
 												</div>
 												<div class="form-group">
-													<label class="info-title" for="Billing City">Thành phố thanh toán <span>*</span></label>
+													<label class="info-title" for="Billing City">Thành phố<span>*</span></label>
 													<input type="text" class="form-control unicase-form-control text-input" id="billingcity" name="billingcity" required="required" value="<?php echo $row['billingCity']; ?>">
 												</div>
 												<div class="form-group">
-													<label class="info-title" for="Billing Pincode">Mã hóa đơn <span>*</span></label>
+													<label class="info-title" for="Billing Pincode">Zip code <span>*</span></label>
 													<input type="text" class="form-control unicase-form-control text-input" id="billingpincode" name="billingpincode" required="required" value="<?php echo $row['billingPincode']; ?>">
 												</div>
 
@@ -318,7 +318,7 @@ if (isset($_POST['shipupdate'])) {
 							<thead>
 								<tr>
 									<th>
-										<span class="estimate-title">Địa chỉ thanh toán</span>
+										<span class="estimate-title">Đại chỉ công ty</span>
 									</th>
 								</tr>
 							</thead>
@@ -332,22 +332,22 @@ if (isset($_POST['shipupdate'])) {
 											?>
 
 												<div class="form-group">
-													<label class="info-title" for="Shipping Address">Địa chỉ thanh toán<span>*</span></label>
+													<label class="info-title" for="Shipping Address">Địa chỉ<span>*</span></label>
 													<textarea class="form-control unicase-form-control text-input" name="shippingaddress" required="required"><?php echo $row['shippingAddress']; ?></textarea>
 												</div>
 
 
 
 												<div class="form-group">
-													<label class="info-title" for="Billing State ">Trạng thái vận chuyển <span>*</span></label>
+													<label class="info-title" for="Billing State ">Huyện<span>*</span></label>
 													<input type="text" class="form-control unicase-form-control text-input" id="shippingstate" name="shippingstate" value="<?php echo $row['shippingState']; ?>" required>
 												</div>
 												<div class="form-group">
-													<label class="info-title" for="Billing City">Thành phố thanh toán <span>*</span></label>
+													<label class="info-title" for="Billing City">Thành phố<span>*</span></label>
 													<input type="text" class="form-control unicase-form-control text-input" id="shippingcity" name="shippingcity" required="required" value="<?php echo $row['shippingCity']; ?>">
 												</div>
 												<div class="form-group">
-													<label class="info-title" for="Billing Pincode">Chi phí vận chuyển <span>*</span></label>
+													<label class="info-title" for="Billing Pincode">Zip code<span>*</span></label>
 													<input type="text" class="form-control unicase-form-control text-input" id="shippingpincode" name="shippingpincode" required="required" value="<?php echo $row['shippingPincode']; ?>">
 												</div>
 

@@ -224,7 +224,7 @@ if (isset($_POST['login'])) {
 							</div>
 
 
-							<button type="submit" name="submit" class="btn-upper btn btn-primary checkout-page-button" id="submit">Đăng nhập</button>
+							<button type="submit" name="submit" class="btn-upper btn btn-primary checkout-page-button" id="submit">Đăng ký</button>
 						</form>
 						<span class="checkout-subtitle outer-top-xs">Đăng nhập hôm nay bạn sẽ trải nghiệm được:</span>
 						<div class="checkbox">
