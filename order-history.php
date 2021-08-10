@@ -21,7 +21,7 @@ if (strlen($_SESSION['login']) == 0) {
 		<meta name="keywords" content="MediaCenter, Template, eCommerce">
 		<meta name="robots" content="all">
 
-		<title>Order History</title>
+		<title>Lịch sử đơn hàng</title>
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/main.css">
 		<link rel="stylesheet" href="assets/css/green.css">
@@ -72,8 +72,8 @@ if (strlen($_SESSION['login']) == 0) {
 			<div class="container">
 				<div class="breadcrumb-inner">
 					<ul class="list-inline list-unstyled">
-						<li><a href="#">Home</a></li>
-						<li class='active'>Shopping Cart</li>
+						<li><a href="#">Trang chủ</a></li>
+						<li class='active'>Giỏ hàng</li>
 					</ul>
 				</div><!-- /.breadcrumb-inner -->
 			</div><!-- /.container -->
@@ -91,16 +91,16 @@ if (strlen($_SESSION['login']) == 0) {
 										<thead>
 											<tr>
 												<th class="cart-romove item">#</th>
-												<th class="cart-description item">Image</th>
-												<th class="cart-product-name item">Product Name</th>
+												<th class="cart-description item">Hình ảnh</th>
+												<th class="cart-product-name item">Tên sản phẩm</th>
 
-												<th class="cart-qty item">Quantity</th>
-												<th class="cart-sub-total item">Price Per unit</th>
-												<th class="cart-sub-total item">Shipping Charge</th>
-												<th class="cart-total item">Grandtotal</th>
-												<th class="cart-total item">Payment Method</th>
-												<th class="cart-description item">Order Date</th>
-												<th class="cart-total last-item">Action</th>
+												<th class="cart-qty item">Số lượng</th>
+												<th class="cart-sub-total item">Giá mỗi đơn vị</th>
+												<th class="cart-sub-total item">Phí vận chuyển</th>
+												<th class="cart-total item">Tổng cộng</th>
+												<th class="cart-total item">Phương thức thanh toán</th>
+												<th class="cart-description item">Ngày đặt hàng</th>
+												<th class="cart-total last-item">Hoạt động</th>
 											</tr>
 										</thead><!-- /thead -->
 
@@ -134,7 +134,7 @@ if (strlen($_SESSION['login']) == 0) {
 
 													<td>
 														<a href="javascript:void(0);" onClick="popUpWindow('track-order.php?oid=<?php echo htmlentities($row['orderid']); ?>');" title="Track order">
-															Track
+															Theo dõi
 													</td>
 												</tr>
 											<?php $cnt = $cnt + 1;

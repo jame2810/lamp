@@ -19,7 +19,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Admin| Manage Products</title>
+		<title>Quản trị viên | Quản lý sản phẩm</title>
 		<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 		<link type="text/css" href="css/theme.css" rel="stylesheet">
@@ -39,13 +39,13 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 							<div class="module">
 								<div class="module-head">
-									<h3>Manage Products</h3>
+									<h3>Quản lý sản phẩm</h3>
 								</div>
 								<div class="module-body table">
 									<?php if (isset($_GET['del'])) { ?>
 										<div class="alert alert-error">
 											<button type="button" class="close" data-dismiss="alert">×</button>
-											<strong>Oh snap!</strong> <?php echo htmlentities($_SESSION['delmsg']); ?><?php echo htmlentities($_SESSION['delmsg'] = ""); ?>
+											<strong>Làm tốt!</strong> <?php echo htmlentities($_SESSION['delmsg']); ?><?php echo htmlentities($_SESSION['delmsg'] = ""); ?>
 										</div>
 									<?php } ?>
 
@@ -56,12 +56,12 @@ if (strlen($_SESSION['alogin']) == 0) {
 										<thead>
 											<tr>
 												<th>#</th>
-												<th>Product Name</th>
-												<th>Category </th>
-												<th>Subcategory</th>
-												<th>Company Name</th>
-												<th>Product Creation Date</th>
-												<th>Action</th>
+												<th>Tên sản phẩm</th>
+												<th>Loại </th>
+												<th>Danh mục con</th>
+												<th>Tên công ty</th>
+												<th>Ngày tạo sản phẩm</th>
+												<th>Hoạt động</th>
 											</tr>
 										</thead>
 										<tbody>

@@ -25,7 +25,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Admin| Change Password</title>
+		<title>Quản trị viên | Đổi mật khẩu</title>
 		<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 		<link type="text/css" href="css/theme.css" rel="stylesheet">
@@ -67,7 +67,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 							<div class="module">
 								<div class="module-head">
-									<h3>Admin Change Password</h3>
+									<h3>Quản trị viên Thay đổi mật khẩu</h3>
 								</div>
 								<div class="module-body">
 
@@ -82,24 +82,24 @@ if (strlen($_SESSION['alogin']) == 0) {
 									<form class="form-horizontal row-fluid" name="chngpwd" method="post" onSubmit="return valid();">
 
 										<div class="control-group">
-											<label class="control-label" for="basicinput">Current Password</label>
+											<label class="control-label" for="basicinput">Mật khẩu hiện tại</label>
 											<div class="controls">
-												<input type="password" placeholder="Enter your current Password" name="password" class="span8 tip" required>
+												<input type="password" placeholder="Nhập mật khẩu hiện tại của bạn" name="password" class="span8 tip" required>
 											</div>
 										</div>
 
 
 										<div class="control-group">
-											<label class="control-label" for="basicinput">New Password</label>
+											<label class="control-label" for="basicinput">Mật khẩu mới</label>
 											<div class="controls">
-												<input type="password" placeholder="Enter your new current Password" name="newpassword" class="span8 tip" required>
+												<input type="password" placeholder="Nhập mật khẩu mới của bạn" name="newpassword" class="span8 tip" required>
 											</div>
 										</div>
 
 										<div class="control-group">
-											<label class="control-label" for="basicinput">Current Password</label>
+											<label class="control-label" for="basicinput">Nhập lại mật khẩu</label>
 											<div class="controls">
-												<input type="password" placeholder="Enter your new Password again" name="confirmpassword" class="span8 tip" required>
+												<input type="password" placeholder="Nhập lại mật khẩu mới của bạn" name="confirmpassword" class="span8 tip" required>
 											</div>
 										</div>
 
@@ -110,7 +110,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 										<div class="control-group">
 											<div class="controls">
-												<button type="submit" name="submit" class="btn">Submit</button>
+												<button type="submit" name="submit" class="btn">Gửi đi</button>
 											</div>
 										</div>
 									</form>

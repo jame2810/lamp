@@ -20,7 +20,7 @@
 <div class="logo">
 	<a href="index.php">
 		
-		<h2>Shopping Portal</h2>
+		<h2>Cổng thông tin mua sắm</h2>
 
 	</a>
 </div>		
@@ -30,7 +30,7 @@
     <form name="search" method="post" action="search-result.php">
         <div class="control-group">
 
-            <input class="search-field" placeholder="Search here..." name="product" required="required" />
+            <input class="search-field" placeholder="Tìm kiếm ở đây..." name="product" required="required" />
 
             <button class="search-button" type="submit" name="search"></button>    
 
@@ -48,9 +48,9 @@ if(!empty($_SESSION['cart'])){
 		<a href="#" class="dropdown-toggle lnk-cart" data-toggle="dropdown">
 			<div class="items-cart-inner">
 				<div class="total-price-basket">
-					<span class="lbl">cart -</span>
+					<span class="lbl">xe đẩy -</span>
 					<span class="total-price">
-						<span class="sign">Rs.</span>
+						<span class="sign">Đ.</span>
 						<span class="value"><?php echo $_SESSION['tp']; ?></span>
 					</span>
 				</div>
@@ -93,7 +93,7 @@ if(!empty($_SESSION['cart'])){
 						<div class="col-xs-7">
 							
 							<h3 class="name"><a href="product-details.php?pid=<?php echo $row['id'];?>"><?php echo $row['productName']; ?></a></h3>
-							<div class="price">Rs.<?php echo ($row['productPrice']+$row['shippingCharge']); ?>*<?php echo $_SESSION['cart'][$row['id']]['quantity']; ?></div>
+							<div class="price">Đ.<?php echo ($row['productPrice']+$row['shippingCharge']); ?>*<?php echo $_SESSION['cart'][$row['id']]['quantity']; ?></div>
 						</div>
 						
 					</div>
@@ -106,13 +106,13 @@ if(!empty($_SESSION['cart'])){
 			<div class="clearfix cart-total">
 				<div class="pull-right">
 					
-						<span class="text">Total :</span><span class='price'>Rs.<?php echo $_SESSION['tp']="$totalprice". ".00"; ?></span>
+						<span class="text">Toàn bộ :</span><span class='price'>Rs.<?php echo $_SESSION['tp']="$totalprice". ".00"; ?></span>
 						
 				</div>
 			
 				<div class="clearfix"></div>
 					
-				<a href="my-cart.php" class="btn btn-upper btn-primary btn-block m-t-20">My Cart</a>	
+				<a href="my-cart.php" class="btn btn-upper btn-primary btn-block m-t-20">Giỏ hàng của tôi</a>	
 			</div><!-- /.cart-total-->
 					
 				
@@ -124,10 +124,10 @@ if(!empty($_SESSION['cart'])){
 		<a href="#" class="dropdown-toggle lnk-cart" data-toggle="dropdown">
 			<div class="items-cart-inner">
 				<div class="total-price-basket">
-					<span class="lbl">cart -</span>
+					<span class="lbl">Giỏ hàng -</span>
 					<span class="total-price">
-						<span class="sign">Rs.</span>
-						<span class="value">00.00</span>
+						<span class="sign"></span>
+						<span class="value">95.000 đ -21%</span>
 					</span>
 				</div>
 				<div class="basket">
@@ -146,7 +146,7 @@ if(!empty($_SESSION['cart'])){
 				<div class="cart-item product-summary">
 					<div class="row">
 						<div class="col-xs-12">
-							Your Shopping Cart is Empty.
+						Giỏ hàng của bạn đang trống.
 						</div>
 						
 						
@@ -160,7 +160,7 @@ if(!empty($_SESSION['cart'])){
 				
 				<div class="clearfix"></div>
 					
-				<a href="index.php" class="btn btn-upper btn-primary btn-block m-t-20">Continue Shooping</a>	
+				<a href="index.php" class="btn btn-upper btn-primary btn-block m-t-20">Tiếp tục mua sắm</a>	
 			</div><!-- /.cart-total-->
 					
 				

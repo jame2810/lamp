@@ -15,7 +15,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Admin| Pending Orders</title>
+		<title>Quản trị viên | Cấp phát đơn đặt hàng</title>
 		<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 		<link type="text/css" href="css/theme.css" rel="stylesheet">
@@ -45,7 +45,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 							<div class="module">
 								<div class="module-head">
-									<h3>Pending Orders</h3>
+									<h3>Cấp phát đơn đặt hàng</h3>
 								</div>
 								<div class="module-body table">
 									<?php if (isset($_GET['del'])) { ?>
@@ -62,14 +62,14 @@ if (strlen($_SESSION['alogin']) == 0) {
 										<thead>
 											<tr>
 												<th>#</th>
-												<th> Name</th>
-												<th width="50">Email /Contact no</th>
-												<th>Shipping Address</th>
-												<th>Product </th>
+												<th> Tên</th>
+												<th width="50">Email /Liên hệ</th>
+												<th>Địa chỉ mua sắm</th>
+												<th>Sản phẩm </th>
 												<th>Qty </th>
-												<th>Amount </th>
-												<th>Order Date</th>
-												<th>Action</th>
+												<th>Số lượng </th>
+												<th>Ngày đặt hàng</th>
+												<th>Hoạt động</th>
 
 
 											</tr>

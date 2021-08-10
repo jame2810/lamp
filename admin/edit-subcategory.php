@@ -23,7 +23,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Admin| Edit SubCategory</title>
+		<title>Quản trị viên | Chỉnh sửa danh mục phụ</title>
 		<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 		<link type="text/css" href="css/theme.css" rel="stylesheet">
@@ -43,14 +43,14 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 							<div class="module">
 								<div class="module-head">
-									<h3>Edit SubCategory</h3>
+									<h3>Chỉnh sửa danh mục phụ</h3>
 								</div>
 								<div class="module-body">
 
 									<?php if (isset($_POST['submit'])) { ?>
 										<div class="alert alert-success">
 											<button type="button" class="close" data-dismiss="alert">×</button>
-											<strong>Well done!</strong> <?php echo htmlentities($_SESSION['msg']); ?><?php echo htmlentities($_SESSION['msg'] = ""); ?>
+											<strong>Làm tốt!</strong> <?php echo htmlentities($_SESSION['msg']); ?><?php echo htmlentities($_SESSION['msg'] = ""); ?>
 										</div>
 									<?php } ?>
 
@@ -65,7 +65,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 										?>
 
 											<div class="control-group">
-												<label class="control-label" for="basicinput">Category</label>
+												<label class="control-label" for="basicinput">Loại</label>
 												<div class="controls">
 													<select name="category" class="span8 tip" required>
 														<option value="<?php echo htmlentities($row['id']); ?>"><?php echo htmlentities($catname = $row['categoryName']); ?></option>
@@ -87,7 +87,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 
 											<div class="control-group">
-												<label class="control-label" for="basicinput">SubCategory Name</label>
+												<label class="control-label" for="basicinput">Tên danh mục phụ</label>
 												<div class="controls">
 													<input type="text" placeholder="Enter category Name" name="subcategory" value="<?php echo  htmlentities($row['subcategory']); ?>" class="span8 tip" required>
 												</div>
@@ -98,7 +98,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 										<div class="control-group">
 											<div class="controls">
-												<button type="submit" name="submit" class="btn">Update</button>
+												<button type="submit" name="submit" class="btn">Cập nhật</button>
 											</div>
 										</div>
 									</form>

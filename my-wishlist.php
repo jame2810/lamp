@@ -95,8 +95,8 @@ if (strlen($_SESSION['login']) == 0) {
 			<div class="container">
 				<div class="breadcrumb-inner">
 					<ul class="list-inline list-unstyled">
-						<li><a href="home.html">Home</a></li>
-						<li class='active'>Wishlish</li>
+						<li><a href="home.html">Trang chủ</a></li>
+						<li class='active'>Danh sách yêu thích</li>
 					</ul>
 				</div><!-- /.breadcrumb-inner -->
 			</div><!-- /.container -->
@@ -111,7 +111,7 @@ if (strlen($_SESSION['login']) == 0) {
 								<table class="table">
 									<thead>
 										<tr>
-											<th colspan="4">my wishlist</th>
+											<th colspan="4">Sản phẩm yêu thích</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -137,16 +137,16 @@ if (strlen($_SESSION['login']) == 0) {
 																<i class="fa fa-star rate"></i>
 																<i class="fa fa-star rate"></i>
 																<i class="fa fa-star non-rate"></i>
-																<span class="review">( <?php echo htmlentities($num); ?> Reviews )</span>
+																<span class="review">( <?php echo htmlentities($num); ?> Đánh giá )</span>
 															</div>
 														<?php } ?>
-														<div class="price">Rs.
+														<div class="price">Đ.
 															<?php echo htmlentities($row['pprice']); ?>.00
-															<span>$900.00</span>
+															<span>900.000 đ</span>
 														</div>
 													</td>
 													<td class="col-md-2">
-														<a href="my-wishlist.php?page=product&action=add&id=<?php echo $row['pid']; ?>" class="btn-upper btn btn-primary">Add to cart</a>
+														<a href="my-wishlist.php?page=product&action=add&id=<?php echo $row['pid']; ?>" class="btn-upper btn btn-primary">Thêm vào giỏ hàng</a>
 													</td>
 													<td class="col-md-2 close-btn">
 														<a href="my-wishlist.php?del=<?php echo htmlentities($row['wid']); ?>" onClick="return confirm('Are you sure you want to delete?')" class=""><i class="fa fa-times"></i></a>
@@ -155,7 +155,7 @@ if (strlen($_SESSION['login']) == 0) {
 											<?php }
 										} else { ?>
 											<tr>
-												<td style="font-size: 18px; font-weight:bold ">Your Wishlist is Empty</td>
+												<td style="font-size: 18px; font-weight:bold ">Danh sách mong muốn của bạn đang trống</td>
 
 											</tr>
 										<?php } ?>

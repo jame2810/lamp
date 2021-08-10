@@ -12,7 +12,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Admin| Users log</title>
+		<title>Quản trị viên | Nhật ký người dùng</title>
 		<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 		<link type="text/css" href="css/theme.css" rel="stylesheet">
@@ -32,7 +32,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 							<div class="module">
 								<div class="module-head">
-									<h3>Manage Users</h3>
+									<h3>Quản lý người dùng</h3>
 								</div>
 								<div class="module-body table">
 
@@ -41,11 +41,11 @@ if (strlen($_SESSION['alogin']) == 0) {
 										<thead>
 											<tr>
 												<th>#</th>
-												<th> User Email</th>
-												<th>User IP </th>
-												<th>Login Time</th>
-												<th>Logout Time </th>
-												<th>Status </th>
+												<th> Email người dùng</th>
+												<th> IP người dùng</th>
+												<th>Thời gian đăng nhập</th>
+												<th>Thời gian đăng xuất </th>
+												<th>Trạng thái </th>
 
 											</tr>
 										</thead>

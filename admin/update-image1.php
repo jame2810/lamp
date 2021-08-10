@@ -25,7 +25,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Admin| Update Product Image</title>
+		<title>Quản trị viên | Cập nhật hình ảnh sản phẩm</title>
 		<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 		<link type="text/css" href="css/theme.css" rel="stylesheet">
@@ -69,14 +69,14 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 							<div class="module">
 								<div class="module-head">
-									<h3>Update Product Image 1</h3>
+									<h3>Cập nhật hình ảnh sản phẩm 1</h3>
 								</div>
 								<div class="module-body">
 
 									<?php if (isset($_POST['submit'])) { ?>
 										<div class="alert alert-success">
 											<button type="button" class="close" data-dismiss="alert">×</button>
-											<strong>Well done!</strong> <?php echo htmlentities($_SESSION['msg']); ?><?php echo htmlentities($_SESSION['msg'] = ""); ?>
+											<strong>Làm tốt!</strong> <?php echo htmlentities($_SESSION['msg']); ?><?php echo htmlentities($_SESSION['msg'] = ""); ?>
 										</div>
 									<?php } ?>
 
@@ -98,7 +98,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 
 											<div class="control-group">
-												<label class="control-label" for="basicinput">Product Name</label>
+												<label class="control-label" for="basicinput">Tên sản phẩm</label>
 												<div class="controls">
 													<input type="text" name="productName" readonly value="<?php echo htmlentities($row['productName']); ?>" class="span8 tip" required>
 												</div>
@@ -106,7 +106,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 
 											<div class="control-group">
-												<label class="control-label" for="basicinput">Current Product Image1</label>
+												<label class="control-label" for="basicinput">Hình ảnh sản phẩm hiện tại 1</label>
 												<div class="controls">
 													<img src="productimages/<?php echo htmlentities($pid); ?>/<?php echo htmlentities($row['productImage1']); ?>" width="200" height="100">
 												</div>
@@ -115,7 +115,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 
 											<div class="control-group">
-												<label class="control-label" for="basicinput">New Product Image1</label>
+												<label class="control-label" for="basicinput">Hình ảnh sản phẩm mới 1</label>
 												<div class="controls">
 													<input type="file" name="productimage1" id="productimage1" value="" class="span8 tip" required>
 												</div>
@@ -126,7 +126,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 										<div class="control-group">
 											<div class="controls">
-												<button type="submit" name="submit" class="btn">Update</button>
+												<button type="submit" name="submit" class="btn">Cập nhật</button>
 											</div>
 										</div>
 									</form>

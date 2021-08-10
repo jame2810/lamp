@@ -32,7 +32,7 @@ if (isset($_POST['submit'])) {
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Shopping Portal | Admin login</title>
+	<title>Cổng thông tin mua sắm | Đăng nhập quản trị viên</title>
 	<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 	<link type="text/css" href="css/theme.css" rel="stylesheet">
@@ -50,7 +50,7 @@ if (isset($_POST['submit'])) {
 				</a>
 
 				<a class="brand" href="index.html">
-					Shopping Portal | Admin
+				Cổng thông tin mua sắm | quản trị viên
 				</a>
 
 				<div class="nav-collapse collapse navbar-inverse-collapse">
@@ -58,8 +58,7 @@ if (isset($_POST['submit'])) {
 					<ul class="nav pull-right">
 
 						<li><a href="http://localhost/shopping/">
-								Back to Portal
-
+						Quay lại Cổng thông tin
 							</a></li>
 
 
@@ -79,7 +78,7 @@ if (isset($_POST['submit'])) {
 				<div class="module module-login span4 offset4">
 					<form class="form-vertical" method="post">
 						<div class="module-head">
-							<h3>Sign In</h3>
+							<h3>Đăng nhập</h3>
 						</div>
 						<span style="color:red;"><?php echo htmlentities($_SESSION['errmsg']); ?><?php echo htmlentities($_SESSION['errmsg'] = ""); ?></span>
 						<div class="module-body">
@@ -113,7 +112,7 @@ if (isset($_POST['submit'])) {
 		<div class="container">
 
 
-			<b class="copyright">&copy; 2017 Shopping Portal </b> All rights reserved.
+			<b class="copyright">&copy; 2021 Cổng thông tin mua sắm </b> Đã đăng ký Bản quyền.
 		</div>
 	</div>
 	<script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>

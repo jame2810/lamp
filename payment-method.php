@@ -25,7 +25,7 @@ if (strlen($_SESSION['login']) == 0) {
 		<meta name="keywords" content="MediaCenter, Template, eCommerce">
 		<meta name="robots" content="all">
 
-		<title>Shopping Portal | Payment Method</title>
+		<title>Cổng thông tin mua sắm | Phương thức thanh toán</title>
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/main.css">
 		<link rel="stylesheet" href="assets/css/green.css">
@@ -59,8 +59,8 @@ if (strlen($_SESSION['login']) == 0) {
 			<div class="container">
 				<div class="breadcrumb-inner">
 					<ul class="list-inline list-unstyled">
-						<li><a href="home.html">Home</a></li>
-						<li class='active'>Payment Method</li>
+						<li><a href="home.html">Trang chủ</a></li>
+						<li class='active'>Phương thức thanh toán</li>
 					</ul>
 				</div><!-- /.breadcrumb-inner -->
 			</div><!-- /.container -->
@@ -71,7 +71,7 @@ if (strlen($_SESSION['login']) == 0) {
 				<div class="checkout-box faq-page inner-bottom-sm">
 					<div class="row">
 						<div class="col-md-12">
-							<h2>Choose Payment Method</h2>
+							<h2>Chọn phương thức thanh toán</h2>
 							<div class="panel-group checkout-steps" id="accordion">
 								<!-- checkout-step-01  -->
 								<div class="panel panel-default checkout-step-01">
@@ -80,7 +80,7 @@ if (strlen($_SESSION['login']) == 0) {
 									<div class="panel-heading">
 										<h4 class="unicase-checkout-title">
 											<a data-toggle="collapse" class="" data-parent="#accordion" href="#collapseOne">
-												Select your Payment Method
+												Chọn phương thức thanh toán của bạn
 											</a>
 										</h4>
 									</div>
@@ -92,8 +92,8 @@ if (strlen($_SESSION['login']) == 0) {
 										<div class="panel-body">
 											<form name="payment" method="post">
 												<input type="radio" name="paymethod" value="COD" checked="checked"> COD
-												<input type="radio" name="paymethod" value="Internet Banking"> Internet Banking
-												<input type="radio" name="paymethod" value="Debit / Credit card"> Debit / Credit card <br /><br />
+												<input type="radio" name="paymethod" value="Internet Banking"> Ngân hàng trực tuyến
+												<input type="radio" name="paymethod" value="Debit / Credit card"> Thẻ tín dụng ghi nợ <br /><br />
 												<input type="submit" value="submit" name="submit" class="btn btn-primary">
 
 

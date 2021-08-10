@@ -25,7 +25,7 @@ if (strlen($_SESSION['login']) == 0) {
 		<meta name="keywords" content="MediaCenter, Template, eCommerce">
 		<meta name="robots" content="all">
 
-		<title>Pending Order History</title>
+		<title>Lịch sử đơn hàng đang chờ xử lý</title>
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="assets/css/main.css">
 		<link rel="stylesheet" href="assets/css/green.css">
@@ -80,8 +80,8 @@ if (strlen($_SESSION['login']) == 0) {
 			<div class="container">
 				<div class="breadcrumb-inner">
 					<ul class="list-inline list-unstyled">
-						<li><a href="#">Home</a></li>
-						<li class='active'>Shopping Cart</li>
+						<li><a href="#">Trang chủ</a></li>
+						<li class='active'>Giỏ hàng</li>
 					</ul>
 				</div><!-- /.breadcrumb-inner -->
 			</div><!-- /.container -->
@@ -99,16 +99,16 @@ if (strlen($_SESSION['login']) == 0) {
 										<thead>
 											<tr>
 												<th class="cart-romove item">#</th>
-												<th class="cart-description item">Image</th>
-												<th class="cart-product-name item">Product Name</th>
+												<th class="cart-description item">Hình ảnh</th>
+												<th class="cart-product-name item">Tên sản phẩm</th>
 
-												<th class="cart-qty item">Quantity</th>
-												<th class="cart-sub-total item">Price Per unit</th>
-												<th class="cart-sub-total item">Shiping Charge</th>
-												<th class="cart-total">Grandtotal</th>
-												<th class="cart-total item">Payment Method</th>
-												<th class="cart-description item">Order Date</th>
-												<th class="cart-total last-item">Action</th>
+												<th class="cart-qty item">Số lượng</th>
+												<th class="cart-sub-total item">Giá mỗi đơn vị</th>
+												<th class="cart-sub-total item">Phí vận chuyển</th>
+												<th class="cart-total">Tổng cộng</th>
+												<th class="cart-total item">Phương thức thanh toán</th>
+												<th class="cart-description item">Ngày đặt hàng</th>
+												<th class="cart-total last-item">Hoạt động</th>
 											</tr>
 										</thead><!-- /thead -->
 
@@ -142,14 +142,14 @@ if (strlen($_SESSION['login']) == 0) {
 														<td class="cart-product-sub-total"><?php echo $row['paym']; ?> </td>
 														<td class="cart-product-sub-total"><?php echo $row['odate']; ?> </td>
 
-														<td><a href="pending-orders.php?id=<?php echo $row['oid']; ?> ">Delete</td>
+														<td><a href="pending-orders.php?id=<?php echo $row['oid']; ?> ">Xóa</td>
 													</tr>
 												<?php $cnt = $cnt + 1;
 												} ?>
 												<tr>
 													<td colspan="9">
 														<div class="cart-checkout-btn pull-right">
-															<button type="submit" name="ordersubmit" class="btn btn-primary"><a href="payment-method.php">PROCCED To Payment</a></button>
+															<button type="submit" name="ordersubmit" class="btn btn-primary"><a href="payment-method.php">Tiến hành thanh toán</a></button>
 
 														</div>
 													</td>
@@ -158,7 +158,7 @@ if (strlen($_SESSION['login']) == 0) {
 											<?php } else { ?>
 												<tr>
 													<td colspan="10" align="center">
-														<h4>No Result Found</h4>
+														<h4>Không có kết quả nào</h4>
 													</td>
 												</tr>
 											<?php } ?>

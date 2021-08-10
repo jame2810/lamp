@@ -93,8 +93,8 @@ if (strlen($_SESSION['login']) == 0) {
 			<div class="container">
 				<div class="breadcrumb-inner">
 					<ul class="list-inline list-unstyled">
-						<li><a href="#">Home</a></li>
-						<li class='active'>Checkout</li>
+						<li><a href="#">Trang chủ</a></li>
+						<li class='active'>Thủ tục thanh toán</li>
 					</ul>
 				</div><!-- /.breadcrumb-inner -->
 			</div><!-- /.container -->
@@ -113,7 +113,7 @@ if (strlen($_SESSION['login']) == 0) {
 									<div class="panel-heading">
 										<h4 class="unicase-checkout-title">
 											<a data-toggle="collapse" class="" data-parent="#accordion" href="#collapseOne">
-												<span>1</span>Billing Address
+												<span>1</span>Địa chỉ thanh toán
 											</a>
 										</h4>
 									</div>
@@ -133,27 +133,27 @@ if (strlen($_SESSION['login']) == 0) {
 
 														<form class="register-form" role="form" method="post">
 															<div class="form-group">
-																<label class="info-title" for="Billing Address">Billing Address<span>*</span></label>
+																<label class="info-title" for="Billing Address">Địa chỉ thanh toán<span>*</span></label>
 																<textarea class="form-control unicase-form-control text-input" name="billingaddress" required="required"><?php echo $row['billingAddress']; ?></textarea>
 															</div>
 
 
 
 															<div class="form-group">
-																<label class="info-title" for="Billing State ">Billing State <span>*</span></label>
+																<label class="info-title" for="Billing State ">Trạng thái thanh toán <span>*</span></label>
 																<input type="text" class="form-control unicase-form-control text-input" id="bilingstate" name="bilingstate" value="<?php echo $row['billingState']; ?>" required>
 															</div>
 															<div class="form-group">
-																<label class="info-title" for="Billing City">Billing City <span>*</span></label>
+																<label class="info-title" for="Billing City">Thành phố thanh toán <span>*</span></label>
 																<input type="text" class="form-control unicase-form-control text-input" id="billingcity" name="billingcity" required="required" value="<?php echo $row['billingCity']; ?>">
 															</div>
 															<div class="form-group">
-																<label class="info-title" for="Billing Pincode">Billing Pincode <span>*</span></label>
+																<label class="info-title" for="Billing Pincode">Mã hóa đơn <span>*</span></label>
 																<input type="text" class="form-control unicase-form-control text-input" id="billingpincode" name="billingpincode" required="required" value="<?php echo $row['billingPincode']; ?>">
 															</div>
 
 
-															<button type="submit" name="update" class="btn-upper btn btn-primary checkout-page-button">Update</button>
+															<button type="submit" name="update" class="btn-upper btn btn-primary checkout-page-button">Cập nhật</button>
 														</form>
 													<?php } ?>
 												</div>
@@ -171,7 +171,7 @@ if (strlen($_SESSION['login']) == 0) {
 									<div class="panel-heading">
 										<h4 class="unicase-checkout-title">
 											<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseTwo">
-												<span>2</span>Shipping Address
+												<span>2</span>Địa chỉ giao hàng
 											</a>
 										</h4>
 									</div>
@@ -185,27 +185,27 @@ if (strlen($_SESSION['login']) == 0) {
 
 												<form class="register-form" role="form" method="post">
 													<div class="form-group">
-														<label class="info-title" for="Shipping Address">Shipping Address<span>*</span></label>
+														<label class="info-title" for="Shipping Address">Địa chỉ giao hàng<span>*</span></label>
 														<textarea class="form-control unicase-form-control text-input" " name=" shippingaddress" required="required"><?php echo $row['shippingAddress']; ?></textarea>
 													</div>
 
 
 
 													<div class="form-group">
-														<label class="info-title" for="Billing State ">Shipping State <span>*</span></label>
+														<label class="info-title" for="Billing State ">Trạng thái vận chuyển <span>*</span></label>
 														<input type="text" class="form-control unicase-form-control text-input" id="shippingstate" name="shippingstate" value="<?php echo $row['shippingState']; ?>" required>
 													</div>
 													<div class="form-group">
-														<label class="info-title" for="Billing City">Shipping City <span>*</span></label>
+														<label class="info-title" for="Billing City">Thành phố vận chuyển <span>*</span></label>
 														<input type="text" class="form-control unicase-form-control text-input" id="shippingcity" name="shippingcity" required="required" value="<?php echo $row['shippingCity']; ?>">
 													</div>
 													<div class="form-group">
-														<label class="info-title" for="Billing Pincode">Shipping Pincode <span>*</span></label>
+														<label class="info-title" for="Billing Pincode">Mã vận chuyển <span>*</span></label>
 														<input type="text" class="form-control unicase-form-control text-input" id="shippingpincode" name="shippingpincode" required="required" value="<?php echo $row['shippingPincode']; ?>">
 													</div>
 
 
-													<button type="submit" name="shipupdate" class="btn-upper btn btn-primary checkout-page-button">Update</button>
+													<button type="submit" name="shipupdate" class="btn-upper btn btn-primary checkout-page-button">Cập nhật</button>
 												</form>
 											<?php } ?>
 

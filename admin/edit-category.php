@@ -43,14 +43,14 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 							<div class="module">
 								<div class="module-head">
-									<h3>Category</h3>
+									<h3>Loại</h3>
 								</div>
 								<div class="module-body">
 
 									<?php if (isset($_POST['submit'])) { ?>
 										<div class="alert alert-success">
 											<button type="button" class="close" data-dismiss="alert">×</button>
-											<strong>Well done!</strong> <?php echo htmlentities($_SESSION['msg']); ?><?php echo htmlentities($_SESSION['msg'] = ""); ?>
+											<strong>Làm tốt!</strong> <?php echo htmlentities($_SESSION['msg']); ?><?php echo htmlentities($_SESSION['msg'] = ""); ?>
 										</div>
 									<?php } ?>
 
@@ -64,7 +64,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 										while ($row = mysqli_fetch_array($query)) {
 										?>
 											<div class="control-group">
-												<label class="control-label" for="basicinput">Category Name</label>
+												<label class="control-label" for="basicinput">tên danh mục</label>
 												<div class="controls">
 													<input type="text" placeholder="Enter category Name" name="category" value="<?php echo  htmlentities($row['categoryName']); ?>" class="span8 tip" required>
 												</div>
@@ -72,7 +72,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 
 											<div class="control-group">
-												<label class="control-label" for="basicinput">Description</label>
+												<label class="control-label" for="basicinput">Sự miêu tả</label>
 												<div class="controls">
 													<textarea class="span8" name="description" rows="5"><?php echo  htmlentities($row['categoryDescription']); ?></textarea>
 												</div>
@@ -81,7 +81,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 										<div class="control-group">
 											<div class="controls">
-												<button type="submit" name="submit" class="btn">Update</button>
+												<button type="submit" name="submit" class="btn">Cập nhật</button>
 											</div>
 										</div>
 									</form>
